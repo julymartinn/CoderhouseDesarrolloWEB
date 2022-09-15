@@ -17,13 +17,13 @@
 }
 .header__general{
     text-align: center;
-    background: #B1BF41;
+    background: linear-gradient(to left, #37800066 ,#00ff50);
     padding: 30px;
     grid-area:header;
 }
 
 .menu__general{
-    background: #B1BF41;
+    background: linear-gradient(to top,#37800066 ,#00ff50);
     text-align: center;
     padding: 6em 10px;
     grid-area:menu;
@@ -48,12 +48,16 @@
 
 .footer{
     grid-area:footer;
-    background: #b1bf41;
-    
+    background: linear-gradient(to right,#37800066 ,#00ff50);
 }
 
- .index__img--logo{
+
+
+.index__img--logo{
     width: 6rem;
+}
+.header__general:hover{
+    transform: rotate(357deg);
 }
 
 .blog__img--header{
