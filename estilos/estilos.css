@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_index{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 4fr 4fr ;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+    "menu  header header"
+    "menu slider blog"
+    "menu comentarios comentarios"
+    "menu footer footer";
+}
+.header__general{
+    text-align: center;
+    background: #B1BF41;
+    padding: 30px;
+    grid-area:header;
+}
+
+.menu__general{
+    background: #B1BF41;
+    text-align: center;
+    padding: 6em 10px;
+    grid-area:menu;
+    text-align: center;
+    
+}
+
+.index__blog--titulos{
+    grid-area:blog;
+    border: 2px solid #2D5731;
+}
+.index__section--slider{
+    grid-area:slider;
+    border: 2px solid #2D5731;
+    text-align: center;
+}
+
+.index__sections_comentarios{
+    grid-area:comentarios;
+    border: 2px solid #2D5731;
+}
+
+.footer{
+    grid-area:footer;
+    background: #b1bf41;
+    
+}
+
+ .index__img--logo{
+    width: 6rem;
+}
+
+.blog__img--header{
+    display: none;
+}
+
+.nav__general ul li{
+    border-bottom: solid 2px #2D5731;
+    padding: 10px 0;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 18px;
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h3{
+    font-family: 'Hachi Maru Pop', cursive;
+    color: #033B3D;
+}
+
+h5{
+    font-family: 'Englebert', sans-serif;
+    color: #033B3D;
+    display: inline;
+    padding-right: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.index__blog li{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 24px;
+}
+
+.index__section--slider div img{
+    margin: 15px auto;
+}
+
+.index__sections_blogSlider, .index__sections_comentarios, .index__blog--titulos {
+    text-align: center;
+}
+.index__img--logo_header{
+    display: none;
+}
+.container_blog{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 4fr ;
+    grid-template-rows: 80px 1fr 150px 80px;
+    grid-template-areas: 
+    "menublog  headerblog "
+    "menublog blog"
+    "menublog comentariosblog"
+    "menublog footerblog ";
+}
+
+.menu__general_blog{
+    grid-area:menublog;
+    background: #b1bf41; 
+    padding: 10em 0px;   
+    text-align: center;
+
+}
+.header__general_blog{
+    grid-area:headerblog;
+    background: #b1bf41;
+    text-align: center;
+}
+.blog__sections_blog{
+    grid-area:blog;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+.blog__sections_comentarios{
+    grid-area:comentariosblog;
+    text-align: center;
+
+}
+
+.footer_blog{
+    grid-area:footerblog;
+    background: #b1bf41;
+}
+.blog__section--menuBlog{
+    text-align: center;
+    padding: 10em 5px;
+}
+.blog__img--logo{
+    width: 6rem;
+}
+
+.blog__seccion__contentBlog{
+    width: 100%;
+    padding: 40px;
+    border-bottom: 2px solid #b1bf41;
+    border-left: 2px solid #b1bf41;
+    border-right: 2px solid #b1bf41;
+    height: 800px
+}
+
+.blog__section--menuBlog{
+    padding: 6em 1em;
+    text-align: center;
+}
+
+.blog__seccion__contentBlogInside{
+    overflow: auto;
+    height: 100%;
+}
+
+.blog__section--menuBlog ul li{
+    padding: 10px 0;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 24px;
+}
+
+.blog__section--menuBlog h3{
+    padding: 10px 0;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 24px;
+    color: #033B3D;
+}
+
+.blog__contentBlog__contend{
+    display: grid;
+    grid-template-columns: 17fr 280px;
+    padding: 12px 20px;
+    margin : 20px auto;
+}
+.blog__contentBlog__contend div p{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 24px;
+}
+.blog__contentBlog__contend img{
+    align-self: center;
+}
+
+.container_materiales{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 4fr ;
+    grid-template-rows: 80px 1fr 150px 80px;
+    grid-template-areas: 
+    "menumateriales  headermateriales "
+    "menumateriales materiales"
+    "menumateriales comentariosmateriales"
+    "menumateriales footermateriales ";
+}
+
+.menu__general_materiales{
+    grid-area:menumateriales;
+    background: #b1bf41; 
+    padding: 10em 0px;   
+    text-align: center;
+
+}
+.header__general_materiales{
+    grid-area:headermateriales;
+    background: #b1bf41;
+    text-align: center;
+}
+.materiales__sections__content{
+    grid-area:materiales;
+    display: grid;
+    grid-template-columns:1fr;
+    padding: 65px 30px
+}
+
+.footer_materiales{
+    grid-area:footermateriales;
+    background: #b1bf41;
+}
+
+.materiales__sections__contentCard{
+    display: flex;
+    justify-content: space-between;
+}
+.materiales__card{
+    border: 2px solid #2D5731;
+    width: 230px;
+    text-align: center;
+    padding: 10px 5px;
+}
+.materiales__sections__content div h3{
+    padding: 25px 0 45px;
+    text-align: center;
+}
+
+.container_contacto{
+    display: grid;
+    grid-template-columns: 200px 4fr ;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "menucontacto  headercontacto "
+    "menucontacto contacto"
+    "menucontacto footercontacto ";
+}
+
+.menu__general_contacto{
+    grid-area:menucontacto;
+    background: #b1bf41; 
+    padding: 10em 0px;   
+    text-align: center;
+
+}
+.header__general_contacto{
+    grid-area:headercontacto;
+    background: #b1bf41;
+    text-align: center;
+}
+.contacto__sections__content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 50px 0;
+}
+
+
+.footer_contacto{
+    grid-area:footercontacto;
+    background: #b1bf41;
+}
+
+label, legend {
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 16px;
+}
+
+input, textarea{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 14px;
+}
+fieldset{
+    padding: 24px 40px;
+}
+.contacto__sections__imag{
+    align-self: center;
+    margin: 0 auto;
+}
+.contacto__btn_enviar{
+    margin: 15px 0;
+}
+
+.container_comentarios{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 4fr ;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "menucomentarios  headercomentarios "
+    "menucomentarios comentarios"
+    "menucomentarios footercomentarios ";
+}
+
+.menu__general_comentarios{
+    grid-area:menucomentarios;
+    background: #b1bf41; 
+    padding: 10em 0px;   
+    text-align: center;
+
+}
+.header__general_comentarios{
+    grid-area:headercomentarios;
+    background: #b1bf41;
+    text-align: center;
+}
+.comentarios__sections_comentarios{
+    grid-area:comentarios;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+
+.footer_comentarios{
+    grid-area:footercomentarios;
+    background: #b1bf41;
+}
+
+.comentario__sections__content{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    padding: 50px 30px;
+}
+.comentarios__section__stars{
+    display: block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.comentarios__content__stars{
+    display: flex;
+}
+
+@media screen and (max-width: 800px ){
+    .container_index{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows:120px 60px 3fr 2fr 1fr 60px;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "slider"
+        "blog"
+        "comentarios"
+        "footer";
+    }
+    .menu__general, .menu__general_blog,
+    .menu__general_comentarios, .menu__general_contacto,
+    .menu__general_materiales{
+        background: #B1BF41;
+        padding: 0;
+        
+    }
+    .nav__general ul {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .index__img--header,.blog__img--header{
+        display:block;
+        width: 4em;
+        margin: 1em 2em;
+    }
+    .index__img--logo,.blog__img--logo{
+        display:none;
+    }
+    .nav__general ul li{
+        border-bottom:0;
+        padding: 0;
+    }
+    .header__general, .header__general_blog,
+    .header__general_comentarios, .header__general_contacto,
+    .header__general_materiales{
+        padding: 5px 10px;
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        align-items: center;
+    }
+    .index__blog--titulos{
+        text-align: center;
+    }
+    .index__img--logo_header{
+        display: block;
+        width: 5em;
+    }
+    .header__general div h1,
+    .header__general_blog div h1,
+    .header__general_comentarios div h1,
+    .header__general_materiales div h1,
+    .header__general_contacto{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .nav__general ul li{
+        font-size: 10px;
+    }
+    .container_blog{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows:120px 60px 3fr 60px;
+        grid-template-areas: 
+        "headerblog"
+        "menublog"
+        "blog"
+        "footerblog";
+    }
+    .blog__seccion__contentBlogInside{
+        overflow: scroll;
+        height: 36em;
+    }
+    .blog__contentBlog__contend{
+        display: block;
+    }
+    .blog__section--menuBlog{
+        display:none;
+    }
+    .blog__sections_blog {
+        grid-area: blog;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .blog__contentBlog__contend div p{
+        font-size: 16px; 
+    }
+    .blog__sections_comentarios{
+        display: none;
+    }
+
+    .container_comentarios{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows:120px 60px 3fr 60px;
+        grid-template-areas: 
+        "headercomentarios"
+        "menucomentarios"
+        "comentarios"
+        "footercomentarios";
+    }
+    .comentario__sections__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px 30px;
+    }
+
+    .container_contacto{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows:120px 60px 3fr 60px;
+        grid-template-areas: 
+        "headercontacto"
+        "menucontacto"
+        "contacto"
+        "footercontacto";
+    }
+    .contacto__sections__imag{
+        display: none;
+    }
+    .contacto__sections__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px 30px;
+    }
+    .container_materiales{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows:120px 60px 3fr 60px;
+        grid-template-areas: 
+        "headermateriales"
+        "menumateriales"
+        "materiales"
+        "footermateriales";
+    }
+
+}

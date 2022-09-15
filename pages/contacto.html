@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Gamja+Flower&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <main class="container_contacto">
+        <header class="header__general_contacto">
+            <img src="../img/logoTierraBuena.png" alt="Logo" class="index__img--logo_header">
+                <div>
+                    <h1>"Lo que se planta se cosecha"</h1>
+                    <h5>Aplica para todo en la vida</h5>
+                </div>
+        </header>
+        
+        <div class="menu__general_contacto">
+            <div class="index__contenedor--logo">
+                <img src="../img/logoTierraBuena.png" alt="Logo" class="index__img--logo">
+            </div>
+            <nav class="nav__general">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./materiales.html">Materiales</a></li>
+                    <li><a href="./comentarios.html">Comentarios</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </nav>   
+        </div>
+            
+        <section class="contacto__sections__content">
+            <div class="contacto__sections__imag">
+                <img src="../img/formulario.jpg" alt="escribiendo" width="350">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Escríbenos y en Breve los pondremos en contacto contigo</legend>
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Pon tu nombre">
+                    </div>
+                    
+                    
+                    <div>
+                        <label for="phone">Telefono</label>
+                        <input type="number" name="phone" placeholder="Pon tu telefono" required>
+                    </div>
+                    <div>
+                        <label for="mail">E-mail</label>
+                        <input type="email" name="mail" placeholder="Pon tu E-mail" required>
+                    </div>
+                    
+                    <div>
+                        <label for="comentarios">Escribe tus comentarios</label><br>
+                        <textarea name="comentarios" id="" cols="80" rows="10"></textarea>
+                    </div>
+    
+                    <div>
+                        <label for="contacto">Deseas que te contestemos por</label><br>
+                        <input type="radio" name="contacto" value="telefono">Telefono
+                        <input type="radio" name="contacto" value="email">Email   
+                    </div>
+                    
+                    <div class="contacto__btn_enviar">
+                        <input type="submit" value="Enviar datos">            
+                    </div>
+                </fieldset> 
+            </div>         
+            
+        </section>
+            
+    
+        <footer class="footer_contacto">
+            <h5>Facebook</h5>
+            <h5>Intagram</h5>
+            <h5>Mail</h5>
+        </footer>
+    </main>
+    
+</body>
+</html>
