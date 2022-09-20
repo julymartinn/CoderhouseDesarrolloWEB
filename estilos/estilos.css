@@ -51,6 +51,7 @@
 
 .index__img--logo{
     width: 6rem;
+    margin:0 auto;
 }
 .header__general:hover{
     transform: rotate(357deg);
