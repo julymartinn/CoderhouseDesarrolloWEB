@@ -109,13 +109,14 @@ li{
 
 .menu__general_blog{
     grid-area:menublog;
-    background: #b1bf41; 
-    padding: 10em 0px;   
+    background: linear-gradient(to top,#37800066 ,#00ff50);
+    padding: 6em 10px;
 
 }
 .header__general_blog{
-    grid-area:headerblog;
-    background: #b1bf41;
+    grid-area:headerblog; 
+    background: linear-gradient(to left, #37800066 ,#00ff50);
+    padding: 30px;
 }
 .blog__sections_blog{
     grid-area:blog;
@@ -129,7 +130,7 @@ li{
 
 .footer_blog{
     grid-area:footerblog;
-    background: #b1bf41;
+    background: linear-gradient(to right,#37800066 ,#00ff50);
 }
 .blog__section--menuBlog{
     padding: 10em 5px;
@@ -197,13 +198,14 @@ li{
 
 .menu__general_materiales{
     grid-area:menumateriales;
-    background: #b1bf41; 
-    padding: 10em 0px;   
+    background: linear-gradient(to top,#37800066 ,#00ff50);
+    padding: 6em 10px;
 
 }
 .header__general_materiales{
     grid-area:headermateriales;
-    background: #b1bf41;
+    background: linear-gradient(to left, #37800066 ,#00ff50);
+    padding: 30px;
 }
 .materiales__sections__content{
     grid-area:materiales;
@@ -214,7 +216,7 @@ li{
 
 .footer_materiales{
     grid-area:footermateriales;
-    background: #b1bf41;
+    background: linear-gradient(to right,#37800066 ,#00ff50);
 }
 
 .materiales__card{
@@ -238,13 +240,14 @@ li{
 
 .menu__general_contacto{
     grid-area:menucontacto;
-    background: #b1bf41; 
-    padding: 10em 0px;   
+    background: linear-gradient(to top,#37800066 ,#00ff50);
+    padding: 6em 10px;
 
 }
 .header__general_contacto{
     grid-area:headercontacto;
-    background: #b1bf41;
+    background: linear-gradient(to left, #37800066 ,#00ff50);
+    padding: 30px;
 }
 .contacto__sections__content{
     display: grid;
@@ -255,7 +258,7 @@ li{
 
 .footer_contacto{
     grid-area:footercontacto;
-    background: #b1bf41;
+    background: linear-gradient(to right,#37800066 ,#00ff50);
 }
 
 label, legend {
@@ -291,13 +294,14 @@ fieldset{
 
 .menu__general_comentarios{
     grid-area:menucomentarios;
-    background: #b1bf41; 
-    padding: 10em 0px;   
+    background: linear-gradient(to top,#37800066 ,#00ff50);
+    padding: 6em 10px;  
 
 }
 .header__general_comentarios{
     grid-area:headercomentarios;
-    background: #b1bf41;
+    background: linear-gradient(to left, #37800066 ,#00ff50);
+    padding: 30px;
 }
 .comentarios__sections_comentarios{
     grid-area:comentarios;
@@ -308,7 +312,7 @@ fieldset{
 
 .footer_comentarios{
     grid-area:footercomentarios;
-    background: #b1bf41;
+    background: linear-gradient(to right,#37800066 ,#00ff50);
 }
 
 .comentario__sections__content{
@@ -339,7 +343,7 @@ fieldset{
     .menu__general, .menu__general_blog,
     .menu__general_comentarios, .menu__general_contacto,
     .menu__general_materiales{
-        background: #B1BF41;
+        background: linear-gradient(to top,#37800066 ,#00ff50);
         padding: 0;
         
     }
