@@ -16,7 +16,6 @@
     "menu footer footer";
 }
 .header__general{
-    text-align: center;
     background: linear-gradient(to left, #37800066 ,#00ff50);
     padding: 30px;
     grid-area:header;
@@ -24,10 +23,8 @@
 
 .menu__general{
     background: linear-gradient(to top,#37800066 ,#00ff50);
-    text-align: center;
     padding: 6em 10px;
     grid-area:menu;
-    text-align: center;
     
 }
 
@@ -38,7 +35,6 @@
 .index__section--slider{
     grid-area:slider;
     border: 2px solid #2D5731;
-    text-align: center;
 }
 
 .index__sections_comentarios{
@@ -55,14 +51,12 @@
 
 .index__img--logo{
     width: 6rem;
+    margin:0 auto;
 }
 .header__general:hover{
     transform: rotate(357deg);
 }
 
-.blog__img--header{
-    display: none;
-}
 
 .nav__general ul li{
     border-bottom: solid 2px #2D5731;
@@ -101,12 +95,6 @@ li{
     margin: 15px auto;
 }
 
-.index__sections_blogSlider, .index__sections_comentarios, .index__blog--titulos {
-    text-align: center;
-}
-.index__img--logo_header{
-    display: none;
-}
 .container_blog{
     display: grid;
     width: 100%;
@@ -123,13 +111,11 @@ li{
     grid-area:menublog;
     background: #b1bf41; 
     padding: 10em 0px;   
-    text-align: center;
 
 }
 .header__general_blog{
     grid-area:headerblog;
     background: #b1bf41;
-    text-align: center;
 }
 .blog__sections_blog{
     grid-area:blog;
@@ -138,7 +124,6 @@ li{
 }
 .blog__sections_comentarios{
     grid-area:comentariosblog;
-    text-align: center;
 
 }
 
@@ -147,7 +132,6 @@ li{
     background: #b1bf41;
 }
 .blog__section--menuBlog{
-    text-align: center;
     padding: 10em 5px;
 }
 .blog__img--logo{
@@ -165,7 +149,6 @@ li{
 
 .blog__section--menuBlog{
     padding: 6em 1em;
-    text-align: center;
 }
 
 .blog__seccion__contentBlogInside{
@@ -216,13 +199,11 @@ li{
     grid-area:menumateriales;
     background: #b1bf41; 
     padding: 10em 0px;   
-    text-align: center;
 
 }
 .header__general_materiales{
     grid-area:headermateriales;
     background: #b1bf41;
-    text-align: center;
 }
 .materiales__sections__content{
     grid-area:materiales;
@@ -236,19 +217,13 @@ li{
     background: #b1bf41;
 }
 
-.materiales__sections__contentCard{
-    display: flex;
-    justify-content: space-between;
-}
 .materiales__card{
     border: 2px solid #2D5731;
     width: 230px;
-    text-align: center;
     padding: 10px 5px;
 }
 .materiales__sections__content div h3{
     padding: 25px 0 45px;
-    text-align: center;
 }
 
 .container_contacto{
@@ -265,13 +240,11 @@ li{
     grid-area:menucontacto;
     background: #b1bf41; 
     padding: 10em 0px;   
-    text-align: center;
 
 }
 .header__general_contacto{
     grid-area:headercontacto;
     background: #b1bf41;
-    text-align: center;
 }
 .contacto__sections__content{
     display: grid;
@@ -320,13 +293,11 @@ fieldset{
     grid-area:menucomentarios;
     background: #b1bf41; 
     padding: 10em 0px;   
-    text-align: center;
 
 }
 .header__general_comentarios{
     grid-area:headercomentarios;
     background: #b1bf41;
-    text-align: center;
 }
 .comentarios__sections_comentarios{
     grid-area:comentarios;
@@ -350,11 +321,8 @@ fieldset{
     margin-right: 20px;
     margin-top: 20px;
 }
-.comentarios__content__stars{
-    display: flex;
-}
 
-@media screen and (max-width: 800px ){
+@media screen and (max-width: 768px ){
     .container_index{
         display: grid;
         width: 100%;
@@ -380,7 +348,6 @@ fieldset{
         grid-template-columns: 25% 25% 25% 25%;
     }
     .index__img--header,.blog__img--header{
-        display:block;
         width: 4em;
         margin: 1em 2em;
     }
@@ -398,9 +365,6 @@ fieldset{
         display: grid;
         grid-template-columns: 2fr 10fr;
         align-items: center;
-    }
-    .index__blog--titulos{
-        text-align: center;
     }
     .index__img--logo_header{
         display: block;
@@ -442,7 +406,6 @@ fieldset{
         grid-area: blog;
         display: grid;
         grid-template-columns: 1fr;
-        text-align: center;
     }
     .blog__contentBlog__contend div p{
         font-size: 16px; 
