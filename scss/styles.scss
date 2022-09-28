@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$background_header: linear-gradient(to left, #37800066 ,#00ff50);
+$background_menu:linear-gradient(to top,#37800066 ,#00ff50);
+$background_footer: linear-gradient(to right,#37800066 ,#00ff50);
+
+.container_index{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 4fr 4fr ;
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+    "menu  header header"
+    "menu slider blog"
+    "menu comentarios comentarios"
+    "menu footer footer";
+    h1,h3{
+        font-family: 'Hachi Maru Pop', cursive;
+        color: #033B3D;
+    }
+    
+    h5{
+        font-family: 'Englebert', sans-serif;
+        color: #033B3D;
+        display: inline;
+        padding-right: 10px;
+    }
+    .menu__general{
+        background: $background_menu;
+        padding: 6em 10px;
+        grid-area:menu;
+        .index__contenedor--logo .index__img--logo{
+            width: 6rem;
+            margin:0 auto;
+        }
+        .nav__general ul li{
+            border-bottom: solid 2px #2D5731;
+            padding: 10px 0;
+            font-family: 'Hachi Maru Pop', cursive;
+            font-size: 18px;
+            list-style: none; 
+            a{
+                text-decoration: none;
+            }
+
+        }
+    }
+    .header__general{
+        background: $background_header;
+        padding: 30px;
+        grid-area:header;
+        &:hover{
+            transform: rotate(357deg);
+        }
+    }
+    .index__section--slider{
+        grid-area:slider;
+        border: 2px solid #2D5731;
+        a{
+            text-decoration: none;
+        }
+        div img{
+            margin: 15px auto;
+        }
+    }
+    .index__blog--titulos{
+        grid-area:blog;
+        border: 2px solid #2D5731;
+        .index__blog li{
+            font-family: 'Gamja Flower', cursive;
+            font-size: 24px;
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .index__sections_comentarios{
+        grid-area:comentarios;
+        border: 2px solid #2D5731;
+        div a{
+            text-decoration: none;
+        }
+    }
+    .footer{
+        grid-area:footer;
+        background:$background_footer;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
