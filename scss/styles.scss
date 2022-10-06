@@ -104,7 +104,7 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
     "menublog footerblog ";
     .menu__general_blog{
         grid-area:menublog;
-        background: linear-gradient(to top,#37800066 ,#00ff50);
+        background: $background_menu;
         padding: 6em 10px;
         .blog__contenedor--log .blog__img--logo{
             width: 6rem;
@@ -117,7 +117,7 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
     }
     .header__general_blog{
         grid-area:headerblog; 
-        background: linear-gradient(to left, #37800066 ,#00ff50);
+        background: $background_header;
         padding: 30px;
     }
     .blog__sections_blog{
@@ -166,7 +166,7 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
     }
     .footer_blog{
         grid-area:footerblog;
-        background: linear-gradient(to right,#37800066 ,#00ff50);
+        background: $background_footer;
     }
 }
 .container_materiales{
@@ -181,13 +181,13 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
     "menumateriales footermateriales ";
     .menu__general_materiales{
         grid-area:menumateriales;
-        background: linear-gradient(to top,#37800066 ,#00ff50);
+        background: $background_menu;
         padding: 6em 10px;
     
     }
     .header__general_materiales{
         grid-area:headermateriales;
-        background: linear-gradient(to left, #37800066 ,#00ff50);
+        background:$background_header;
         padding: 30px;
     }
     .materiales__sections__content{
@@ -207,7 +207,7 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
     
     .footer_materiales{
         grid-area:footermateriales;
-        background: linear-gradient(to right,#37800066 ,#00ff50);
+        background:$background_footer;
     }
 }
 .container_contacto{
@@ -220,13 +220,13 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
     "menucontacto footercontacto ";
     .menu__general_contacto{
         grid-area:menucontacto;
-        background: linear-gradient(to top,#37800066 ,#00ff50);
+        background: $background_menu;
         padding: 6em 10px;
     
     }
     .header__general_contacto{
         grid-area:headercontacto;
-        background: linear-gradient(to left, #37800066 ,#00ff50);
+        background: $background_header;
         padding: 30px;
     }
     .contacto__sections__content{
@@ -252,11 +252,10 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
                 margin: 15px 0;
             }
         }
-    }    
-    
+    }        
     .footer_contacto{
         grid-area:footercontacto;
-        background: linear-gradient(to right,#37800066 ,#00ff50);
+        background: $background_footer;
     }
 }
 
