@@ -210,6 +210,62 @@ $background_footer: linear-gradient(to right,#37800066 ,#00ff50);
         background: linear-gradient(to right,#37800066 ,#00ff50);
     }
 }
+.container_contacto{
+    display: grid;
+    grid-template-columns: 200px 4fr ;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "menucontacto  headercontacto "
+    "menucontacto contacto"
+    "menucontacto footercontacto ";
+    .menu__general_contacto{
+        grid-area:menucontacto;
+        background: linear-gradient(to top,#37800066 ,#00ff50);
+        padding: 6em 10px;
+    
+    }
+    .header__general_contacto{
+        grid-area:headercontacto;
+        background: linear-gradient(to left, #37800066 ,#00ff50);
+        padding: 30px;
+    }
+    .contacto__sections__content{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 50px 0;
+        .contacto__sections__imag{
+            align-self: center;
+            margin: 0 auto;
+        }
+        label, legend {
+            font-family: 'Hachi Maru Pop', cursive;
+            font-size: 16px;
+        }
+        
+        input, textarea{
+            font-family: 'Gamja Flower', cursive;
+            font-size: 14px;
+        }
+        fieldset{
+            padding: 24px 40px;
+            .contacto__btn_enviar{
+                margin: 15px 0;
+            }
+        }
+    }    
+    
+    .footer_contacto{
+        grid-area:footercontacto;
+        background: linear-gradient(to right,#37800066 ,#00ff50);
+    }
+}
+
+
+
+
+
+
+
 
 
 
